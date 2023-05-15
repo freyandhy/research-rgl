@@ -135,9 +135,22 @@ export default function Home() {
         autoSize={true}
         isDroppable
       >
-        {dataLayout.map((data) => {
+        {dataLayout.map((data, i) => {
           return (
-            <div key={data.i}>
+            <div key={data.i} className="grid-item">
+              <div className="grid-item__title">Title</div>
+              <div className="grid-item__remove">
+                <div
+                  className="icon"
+                  onClick={() => {
+                    let remove = [...dataLayout];
+                    remove.splice(i, 1);
+                    setDataLayout([...remove]);
+                  }}
+                >
+                  <img src="/x.svg" />
+                </div>
+              </div>
               {data.chart && <Chart options={data.chart} />}
             </div>
           );

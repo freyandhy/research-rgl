@@ -4,6 +4,40 @@
   width: 100%;
 }
 
+.grid-item{
+  width: 100%;
+  position: relative;
+}
+.grid-item__title {
+  position: absolute;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.grid-item__remove {
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: right;
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+  z-index: 10;
+}
+
+.grid-item__remove .icon {
+  width: 20px!important;
+  height: 20px!important;
+  cursor: pointer;
+}
+.grid-item__remove img {
+  width: 20px!important;
+  height: 20px;
+  cursor: pointer;
+}
+
+
 .echart-item canvas {
   width: 100%!important;
 }
