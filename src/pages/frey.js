@@ -44,6 +44,8 @@ const Frey = () => {
           rowHeight={30}
           width={1200}
           onLayoutChange={(layout) => setDataLayout(layout)}
+          autoSize
+          allowOverlap
         >
           {dataLayout.map((item) => (
             <div key={item.i}>{item.i}</div>
