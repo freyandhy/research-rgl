@@ -1,10 +1,8 @@
-
-
 #content {
   width: 100%;
 }
 
-.grid-item{
+.grid-item {
   width: 100%;
   position: relative;
 }
@@ -27,19 +25,18 @@
 }
 
 .grid-item__remove .icon {
-  width: 20px!important;
-  height: 20px!important;
+  width: 20px !important;
+  height: 20px !important;
   cursor: pointer;
 }
 .grid-item__remove img {
-  width: 20px!important;
+  width: 20px !important;
   height: 20px;
   cursor: pointer;
 }
 
-
 .echart-item canvas {
-  width: 100%!important;
+  width: 100% !important;
 }
 
 .draggable-box {
@@ -57,16 +54,23 @@
   background-image: url('/chart-line-svgrepo-com.svg');
 }
 
-.draggable-box:active{
-  animation: drag_style .1s;
+.draggable-box:active {
+  animation: drag_style 0.1s;
 }
 
 @keyframes drag_style {
-    0% {background-color: #fc0; color:#000;}
-    99% {background-color: #fc0; color:#000;}
-    100% {background-color: #ccc;}
+  0% {
+    background-color: #fc0;
+    color: #000;
+  }
+  99% {
+    background-color: #fc0;
+    color: #000;
+  }
+  100% {
+    background-color: #ccc;
+  }
 }
-
 
 /* .draggable-box.is-drag .drag-container {
   width: 100px;
@@ -75,7 +79,8 @@
 } */
 
 .react-grid-layout {
-  background: #eee;
+  /* background: #eee; */
+  background: #fff;
   margin-top: 10px;
 }
 
@@ -97,7 +102,7 @@
 }
 
 .react-grid-item * {
-  width: 100%!important;
+  width: 100% !important;
 }
 
 .react-grid-item:not(.react-grid-placeholder) {
