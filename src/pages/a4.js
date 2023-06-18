@@ -5,7 +5,7 @@ import { Responsive, WidthProvider } from 'react-grid-layout';
 import 'react-grid-layout/css/styles.css';
 import 'react-resizable/css/styles.css';
 
-const dummyData = [{ i: 'a', x: 0, y: 0, w: 20, h: 3 }];
+const dummyData = [{ i: 'a', x: 0, y: 0, w: 20, h: 1 }];
 
 const A4 = () => {
   const [dataLayout, setDataLayout] = useState(dummyData);
